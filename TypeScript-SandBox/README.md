@@ -1,11 +1,9 @@
-# TypeScript SandBox
-What is TypeScript ? (blue javascript) 🔵
+# TypeScript-SandBox
 
-<p align="center">
-  <img src="Assets/1.png" >
-   
-  <hr/>
-  
-  <img  src="Assets/2.png">
+What is TypeScript ? (Blue javascript) 🔵
 
-</p>
+**Built with:** TypeScript
+**Topics:** `typescript`, `typescript-definitions`
+
+---
+↩ Part of the [**references**](../) collection · [all collections](https://github.com/fadyehabamer?tab=repositories) · [@fadyehabamer](https://github.com/fadyehabamer)
