@@ -1,0 +1,10 @@
+//string
+$name : "fady";
+$main_color : #00f;
+$margin-bottom:10px;
+
+.class1{
+    margin-bottom: $margin-bottom;
+    background-color: $main_color;
+    font-family: $name;
+}

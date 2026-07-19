@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <title>REACT JS</title>
+</head>
+
+<body>
+    <div id="app">
+
+
+
+    </div>
+
+    <script type="text/babel">
+        const exp = 'this is JSX Expression'
+        const element = (
+        <p className="myElement"> 
+            HI REACT <br/> 
+            {exp} <br/> 
+            {2*5} <br/> 
+        </p>)
+
+        // * other way to define react element using BABEL
+        const SameElement = React.createElement('p',{className : "myElement"} , "Hello React from other way")
+        
+        ReactDOM.render(element,document.getElementById("app"))
+    </script>
+
+</body>
+
+</html>

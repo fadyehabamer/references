@@ -1,0 +1,97 @@
+/* start global */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+.clearfix{
+    clear: both;
+}
+/* start header */
+.main{
+    padding: 10px;
+    background-color: black;
+    color: #ddd;
+    text-align: center;
+}
+
+nav ul{
+    padding: 15px;
+    background-color:#ccc;
+    text-align: center;
+
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li:after{
+    content: " | ";
+}
+nav ul li:last-child:after{
+    content:none
+}
+/* end header */
+/* start body */
+.post{
+    width: 70%;
+    float: left;
+    
+}
+.post article{
+    margin: 20px;
+    border:2px solid #ddd;
+    color: #001;
+}
+.post article header{
+    padding: 10px;
+    background-color: rgb(216, 216, 216) ;
+}
+.post article section{
+    padding: 10px;
+
+}
+.post article img
+{
+    padding: 10px;
+    width:175px;
+    height: 175px;
+    display:inline-block;
+}
+/* end body */
+/* start aside */
+aside{
+    float: right;
+    width: 30%;
+}
+aside section{
+    background-color: #ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px ;
+}
+aside section h3{
+    padding: 10px;
+    background-color: rgb(206, 206, 206);
+    margin-top: .5px;
+    font-weight: bold;
+}
+aside section ul{
+    padding: 5px ;
+}
+aside section ul li{
+    line-height: 1.2;
+    padding: 2px;
+}
+/* end aside */
+
+/* start footer */
+footer{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+/* end footer */

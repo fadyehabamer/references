@@ -1,0 +1,13 @@
+$direction:ltr;
+$float-left:left;
+$float-right:right;
+
+// to change the layout of an Arabic-English Website  
+
+@if $direction==ltr {
+    $float-left: left;
+    $float-right: right;
+}@else{
+    $float-left:right;
+    $float-right:left;
+}

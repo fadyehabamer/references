@@ -1,0 +1,8 @@
+@function inc($element){
+    @return $element  + 10
+}
+
+.class1{
+    font-size: inc(16px);
+    // font-size will be 26
+}

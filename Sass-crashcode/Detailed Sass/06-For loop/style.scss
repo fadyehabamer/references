@@ -1,0 +1,22 @@
+$prop:font;
+.test{
+#{$prop}-size:20px;
+}
+// --------------------------------------------------
+@for $i from 1 to 5 {
+    //class1 --> class4 (to)  end -> exclude
+    .class#{$i}{
+        margin: 20px;
+        height: 20px;
+        background-color: red;
+    }
+}
+
+@for $i from 1 through 5 {
+    //class1 --> class5 (through) end -> include
+    .class#{$i}{
+        margin: 5px;
+        height: 50px;
+        background-color: green;
+    }
+}

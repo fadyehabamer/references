@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div id="app"></div>
+
+
+    <script type="text/babel">
+        // * You can pass a State of a Component as a prop to other component
+        // * props is like an argument (parameter) in a function
+
+        // Parent Component
+        class App extends React.Component{
+            state={
+                name : "App Component State"
+            }
+            render(){
+                return (
+                    <div>
+                    <h1>Hi From App Component</h1>
+                    <h4><i>this is {this.state.name} </i></h4>
+                    <Child text = "Hello from Child 1 Component"/>
+                    <ChildTwo field = {this.state.name} text = "Hello from Child 2 Component" />
+                    </div>
+                )
+            }
+        }
+
+        // Child Component
+        class Child extends React.Component{
+            render(){
+                return(
+                    <h1>
+                       Child 1 Component Props is {`"${this.props.text}"`}
+                    </h1>
+                )
+            }
+        }
+
+        // 2nd Child Component 
+        function ChildTwo (props){
+            return(
+            <div>    
+            <h1>
+                    Child 2 Component Props is {`"${props.text}"`}
+                    {console.log(props)}
+                    </h1>
+                <h2>
+                    This is state of Parent Component : {props.field} ,but in ChildTwo component
+                </h2>
+            </div>
+                )
+        }
+
+        ReactDOM.render(<App/>,document.getElementById("app") );
+    </script>
+</body>
+
+</html>

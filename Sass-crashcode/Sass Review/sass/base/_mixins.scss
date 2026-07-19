@@ -1,0 +1,15 @@
+@mixin transform($p) {
+  -webkit-transform: $p;
+  -ms-transform: $p;
+  -moz-transform: $p;
+  -o-transform: $p;
+  transform: $p;
+}
+
+@function setBtnColor($c) {
+  @if (lightness($c) > 50) {
+    @return rgb(0, 0, 0);
+  } @else {
+    @return #fff;
+  }
+}

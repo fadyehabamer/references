@@ -1,0 +1,48 @@
+.fb {
+  height: 20px;
+  background-color: green;
+  margin: 20px;
+}
+
+.tw {
+  height: 20px;
+  background-color: green;
+  margin: 20px;
+}
+
+.yt {
+  height: 20px;
+  background-color: green;
+  margin: 20px;
+}
+
+.fb {
+  background-color: blue;
+  height: 20px;
+  margin: 20px;
+}
+
+.fb:hover {
+  background-color: black;
+}
+
+.tw {
+  background-color: cyan;
+  height: 20px;
+  margin: 20px;
+}
+
+.tw:hover {
+  background-color: green;
+}
+
+.yt {
+  background-color: red;
+  height: 20px;
+  margin: 20px;
+}
+
+.yt:hover {
+  background-color: yellow;
+}
+/*# sourceMappingURL=style.css.map */

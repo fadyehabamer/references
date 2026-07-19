@@ -1,0 +1,27 @@
+.container > *{
+    background-color:white;
+    color:black;
+    text-align: center;
+    border: 5px solid black ;
+}
+.container{
+    display: grid;
+    grid-gap: 3px;
+    /* second you can use png to see the idea */
+    /* third ..... */
+
+    grid-template-areas: 
+        "head  head  head  head"
+        "navigation  navigation    main   main  "
+        "aside  aside  main   main  "
+        "footer footer footer footer"
+        ;
+}
+/* First you must declare Tags in html5 with variables */
+/* variables can be any Names */
+
+header {grid-area: head;}
+nav    {grid-area: navigation;}
+main   {grid-area: main;}
+aside  {grid-area: aside;}
+footer {grid-area: footer;}

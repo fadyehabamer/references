@@ -1,0 +1,12 @@
+$x:12;
+
+@while $x >0 {
+    .col-#{$x}{
+        width: (100% / (12/ $x ));
+        height: 20px;
+        background-color: red;
+    }
+    $x: $x - 1;
+    
+    
+}

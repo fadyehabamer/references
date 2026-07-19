@@ -1,0 +1,23 @@
+div{
+    background-color: red;
+    border: 1px solid #ccc;
+    margin:10px;
+    padding:20px;
+}
+
+//  I want to change border raduis value for each class
+@mixin border-rad($px){
+    border-radius: $px;
+}
+@mixin back-color($color) {
+    background-color: $color;
+}
+.class1{
+    @include border-rad(7px);
+    @include back-color(black)
+}
+.class2{
+    @include border-rad(10px);
+    @include back-color(green)
+
+}

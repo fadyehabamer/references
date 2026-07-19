@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        #app{
+            width: 100%;
+            height: 100vh;
+        }
+        header,footer{
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            background-color: aqua;
+            line-height:40px;
+        }
+
+        main{
+            width: 100%;
+            height:calc(100vh - (40px + 40px));
+            background-color:steelblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    </style>
+
+<body>
+    <div id="app"></div>
+
+
+    <script type="text/babel">
+
+        class App extends React.Component{
+            render(){
+                return(
+                    <div>
+                        <Header/>
+                        <Main/>
+                        <Footer/>    
+                    </div>
+                )
+            }
+        }   
+        
+        // * Header component
+        class Header extends React.Component{
+            render(){
+                return <header>Header</header>
+            }
+        }
+
+        // * Main Component
+        class Main extends React.Component{
+            render(){
+                return <main> MAIN </main>
+            }
+        }
+
+        
+        // * Footer Component
+        class Footer extends React.Component{
+            render(){
+                return <footer> Footer </footer>
+            }
+        }
+
+        ReactDOM.render(<App/>,document.getElementById('app'))
+    </script>
+</body>
+
+</html>

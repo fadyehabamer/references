@@ -1,0 +1,2 @@
+pug source -w                      => watch file
+pug source -w -o new source	   => locate new html file	

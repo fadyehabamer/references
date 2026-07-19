@@ -1,0 +1,67 @@
+/* To use Grid properties  the parent must be displayed as grid */
+
+.container {
+  display: grid;
+  
+  /* grid-template-columns  to control columns of the page  deals with WIDTH  */
+  /* grid-template-columns:repeat(12,8.333%);  make 12 column every coloumn has width with 8.333% */
+  /* grid-template-columns: 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333%;  make 12 each has width 8.333% */
+  /* grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  make 12 columns each has same width  */
+
+  /* grid-template-rows: to control rows of the page;        deals with HEIGHT */
+  /* grid-template-rows:repeat(12,8.333%);  make 12 row every coloumn has height with 8.333% */
+  /* grid-template-rows: 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333% 8.333%;  make 12 each has height 8.333% */
+  /* grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  make 12 rows each has same height  */
+
+  /* grid-auto-rows  that prop take function ( minmax(minheight,maxheight) ) used for big content */
+  /* grid-template-columns:repeat(3,33.33%); */
+  /* grid-template-rows: repeat(4,1fr); */
+  /* grid-auto-rows: minmax(8.33%,auto); */
+
+  /* grid gap */
+  /* if you dont want to use margin... you can use grid gap */
+  /* grid-column-gap: 10px;  will make 10px gap between cols */
+  /* grid-row-gap   : 10px;  will make 10px gap between rows  */
+  /* if both col and row gap are equal use ... grid-gap: 10px ; */
+  /* grid-gap: 10px 20px;  10px gap between rows   20px gap between cols */
+
+  /* NESTED GRID */
+  /* THE parent must be dispalyed as GRID !!! */
+
+  /* grid-column-start/end   (for children )  */
+  /* grid-template-columns: repeat(12,8.33%); */
+
+  /* grid-row-start/end   (for children )  */
+  /* grid-template-rows: repeat(12,8.33%)  ; */
+
+  /* justify-items control items Horizontally --> left , center right */
+  /* grid-template-columns: repeat(3,33.33%) ; */
+  /* grid-template-rows: repeat(4,33.33%); */
+  /* justify-items: start;  put children to left */
+  /* justify-items: end;  put children to right */
+  /* justify-items: center;  put children to center */
+
+  /* align-items: control items Vertically --> Top , center , bottom */
+
+  /* grid-template-rows: repeat(4,33.33%); */
+  /* grid-template-columns:repeat(3,33.33%); */
+  /* align-items: start;  put children to top */
+  /* align-items: center; put children to center */
+  /* align-items: end;    put children to bottom */
+}
+.one {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 6; */
+  /* grid-column: 1/6;  short-hand */
+
+  /* grid-row-start: 1 ; */
+  /* grid-row-end: 6; */
+  /* grid-row: 1/6; short-hand */
+}
+.item {
+  padding: 5px 0;
+  margin: 2px;
+  background-color: darkred;
+  color: white;
+  text-align: center;
+}

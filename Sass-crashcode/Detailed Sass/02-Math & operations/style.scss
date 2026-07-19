@@ -1,0 +1,8 @@
+// math & operations (+ ,- , * , /)
+$main-size:18px;
+$full-width:100%;
+
+.class1{
+    font-size: $main-size + 20;
+    width: $full-width / 5 ;
+}

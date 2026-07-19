@@ -1,0 +1,9 @@
+//syntax 
+// $name : (key1:value1 , key2:value2 , .......)
+
+$head : (h1 : 50px , h2:40px , h3:30px ,h4:20px );
+@each $key , $val in $head{
+#{$key}{
+    font-size: #{$val};
+}
+}

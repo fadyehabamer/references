@@ -1,0 +1,32 @@
+//syntax..
+// @each $var in $list
+$socialist : fb tw yt;
+
+@each $social in $socialist {
+    .#{$social}{
+        height: 20px;
+        background-color: green;
+        margin: 20px;
+        //background: url(images/#{$social}.png);
+    }
+}
+
+// ------------------------------------------------------------
+// ADVANCED
+// Each ith multiple assingment
+
+@each $social,
+$color,
+$hover in (fb, blue, black),
+(tw, cyan, green),
+(yt, red, yellow) {
+    .#{$social} {
+        background-color: $color;
+        height: 20px;
+        margin: 20px;
+    
+
+    &:hover {
+        background-color: $hover;
+    }
+}}

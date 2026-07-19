@@ -1,0 +1,416 @@
+/* box shadow
+.boxshadow{
+    width: 200px;
+    height: 200px;
+    padding: 20px ;
+    margin: 20px auto;
+    border: 1px solid #dddddd ;
+    box-shadow: 10px 10px 10px #f00 inset,
+    -10px -10px 10px #00f inset;
+} */
+/* =================================================== */
+/*box sizing  */
+
+/* *{
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+section{
+    width:500px;
+    margin: 20px auto;
+    border: 1px solid #dddddd ;
+    overflow: hidden;
+}
+.right{
+    padding: 10px;
+    float: right;
+    width: 15%;
+    background-color: #00f;
+    color: #dddddd;
+}
+
+.left{
+    padding: 100px;
+    float: left;
+    width: 85%;
+    background-color: #f00;
+    color: #dddddd;
+} */
+/* ============================================================= */
+/* text overflow */
+/* div
+{
+    width: 200px;
+    background-color:#ddd;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+div:hover{
+    overflow: hidden;
+    white-space: normal;
+} */
+/* ====================================================== */
+/* rotate  */
+/* div
+{
+width: 200px;
+height: 10px;
+padding: 20px ;
+margin: 20px auto;
+border: 1px solid #dddddd ;
+transform: rotate(190deg);
+} */
+/* ============================================================================ */
+/* scale */
+/* *{
+    box-sizing: border-box;
+}
+.container{
+    width:250px;
+    height:100px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: lawngreen;
+}
+.test{
+    width: 100%;
+    height: 100%;
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.test:hover{
+    transform: scale(0.5);
+} */
+/* ====================================================== */
+
+/* translate , skew */
+/* .container{
+    margin:50px auto;
+    border:1px solid grey;
+    background-color:  #ddd;
+    width: 250px;
+    height: 220px;
+}
+.translate{
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height:100px;
+    transition: all 1s ease-in-out ;
+    color: white;
+}
+.translate:hover{
+    transform: translate(30px,30px) scale(.5) skew(20deg,0);
+} */
+/* =================================================================== */
+/* rotate 3d */
+/* transform:rotatex()
+          rotatey()
+          rotatez() */
+/*=====================================================================  */
+
+/* translate 3d ,scale 3d ,matrix 3d
+need prespective for the cotainer of the element */
+/* body{
+    perspective: 1000px;
+}
+img{
+    width: 80px;
+    height: 75px;
+    display: block;
+    margin: 50px auto;
+    transition: all .5s ease-in-out;
+}
+img:hover{
+    transform: translate3d(100px,10px,10px) scale3d(2,2,2)
+
+} */
+/* ========================================================== */
+
+/* preserve 3d */
+/* .father{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    background-color: #090;
+    transform: rotateY(20deg);
+    transform-style: preserve-3d;
+
+}
+.c1{
+    width: 300px;
+    height: 300px;
+    background-color: #009;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transform:translateZ(50px) rotatey(45 deg);
+}
+
+
+.c2{
+    width: 300px;
+    height: 300px;
+    background-color: #900;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    transform:translateZ(150px) ;
+} */
+/* ====================================== */
+
+/* backface visibility and flipping card */
+/* body{
+    font-family: Arial, Helvetica, sans-serif;
+    perspective: 500px;
+} 
+.card{
+    width: 300px;
+    height: 350px;
+    margin: 50px auto;
+    position: relative;
+    transition: all .54s ease-in-out;
+    transform-style: preserve-3d;
+    border-radius:10px ;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.card > div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    color: #777;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.front{
+    z-index: 2;
+    backface-visibility: hidden ;
+    border-radius: 10px;
+}
+.front header{
+    background-color: #444;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 55px;
+}
+.front img{
+      width: 100px;
+      height: 100px;
+      border-radius:50% ;
+      position: relative;
+      top:25px
+}
+.front h3{
+    margin-bottom: 5px;
+}
+.front p{
+    margin: 0 auto;
+    padding: 15px;
+
+}
+.front span{
+    display:inline-block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #0d2567;
+}
+.back{
+    z-index: 1;
+    transform: rotateY(180deg);
+    background-color: crimson;
+    backface-visibility: hidden;
+} 
+.back p{
+    padding: 10px;
+} */
+/* =============================================================== */
+/* flex box 1 parent
+.cont{
+   width: 800px;
+    padding: 10px;
+    margin: 50px auto;
+    background-color: #ddd;
+    display: flex;
+    /* display: inline-flex; */
+/* flex-direction: column; */
+/* flex-direction: row;
+    flex-wrap: wrap; */
+/* flex-flow: row wrap ; */
+/* justify-content: space-between;
+}
+.cont div 
+{
+    width:100px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #080;
+
+} */
+
+/* ======================================== */
+/* trasition */
+/* transition : property | duration | timing function | delay */
+/* * {
+  margin: 0;
+  padding: 0;
+}
+div {
+  width: 200px;
+  height: 120px;
+  background-color: #aaa;
+}
+p {
+  background-color: cyan;
+  margin: 5px 0 5px 0;
+  width: 120px;
+  height: 20px;
+  transition-property: width;
+  transition-duration: 3s;
+}
+div p:first-of-type {
+  transition-timing-function: ease;
+}
+div p:nth-of-type(2) {
+  transition-timing-function: linear;
+}
+div p:nth-of-type(3) {
+  transition-timing-function: ease-in;
+}
+div p:nth-of-type(4) {
+  transition-timing-function: ease-out;
+}
+div p:last-of-type {
+  transition-timing-function: ease-in-out;
+}
+
+div:hover p {
+ 
+  width: 200px;
+  /* transition: all 3s ease-in-out; 
+} */
+/* ======================================================== */
+/* transition Example */
+/* div{
+    font-family: Arial, Helvetica, sans-serif;
+    width:150px;
+    height: 150px;
+    background-color: darkblue;
+    margin:50px auto;
+    color:white;
+    text-align: center;
+    line-height: 130px;
+    box-shadow: inset 0 0 0 5px cadetblue;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+div:hover {
+
+border-radius: 50%;
+} */
+/* ================================================== */
+
+/* column count and column gap and column rule*/
+
+/* div{
+    border: 1px solid black;
+    /* padding: 10px;
+    column-count:5;
+    column-gap: 20px;
+    column-rule: 4px solid #3498db ; */
+
+/* short hand
+        columns:width cout;
+    */
+
+/* columns: 10px 4; */
+/* }  */
+/* div h2{
+    column-span: all;
+} */
+/* ============================================================ */
+
+/* animation */
+
+
+.big {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  /* animation: keyframe-name |duration | number-of-repeation   */
+  animation: move 10s 5;
+  animation-direction: alternate;
+  /* animation-fill-mode: backwards; ==> takes the first key properties  ( 0% ) */
+  /* animation-fill-mode: forwards; ==> takes the last key properties  ( 100% ) */ 
+  /* animation-fill-mode: both; ==> takes the first , last key properties  ( 0% , 100% ) */
+  /* animation-timing-function: ease-in-out;s */
+
+
+}
+.one,
+.two,
+.three,
+.four {
+  width: 50%;
+  height: 50%;
+
+}
+
+.one {
+  background-color: red;
+}
+.two {
+  background-color: green;
+}
+.three {
+  background-color: lightseagreen;
+}
+.four {
+  background-color: yellow;
+}
+
+@keyframes move {
+  0% {
+    
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 200;
+  }
+  50% {
+    top: 200;
+    left: 200;
+  }
+  75% {
+    top: 200;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
