@@ -8,6 +8,8 @@
 
 Bootstrap 5 documented Code. It demonstrates CSS Grid, Flexbox, CSS keyframe animations, CSS transitions, Responsive design (media queries).
 
+> **Note:** the `CatReloded BS5 Session` page ships **Bootstrap 5.0.0-alpha1**, which still used v4-style names. Stable Bootstrap 5 renamed them: `float-right` → `float-end`, `ml-*`/`mr-*` → `ms-*`/`me-*`, `data-toggle`/`data-dismiss` → `data-bs-*`, `.close` → `.btn-close` (see the [migration guide](https://getbootstrap.com/docs/5.3/migration/)). The `Bootstrap 5/` lessons load stable 5.0.2.
+
 ## 🛠 Built With
 
 **Languages:** HTML · CSS · Sass · JavaScript
