@@ -11,16 +11,17 @@ function App() {
   const [search, setSearch] = useState('');
 
   const getTopAnime = async () => {
-    const response = await fetch(`https://api.jikan.moe/v3/top/anime/1/bypopularity`);
+    // Jikan v3 was shut down (it now answers 410 Gone); v4 wraps results in `data`
+    const response = await fetch(`https://api.jikan.moe/v4/top/anime?filter=bypopularity&limit=10`);
     const data = await response.json();
     // console.log(data);
-    setTopAnime(data.top.slice(0, 10));
+    setTopAnime((data.data || []).slice(0, 10));
   }
 
   const fetchAnime = async (search) => {
-    const response = await fetch(`https://api.jikan.moe/v3/search/anime?q=${search}&limit=20`);
+    const response = await fetch(`https://api.jikan.moe/v4/anime?q=${encodeURIComponent(search)}&limit=20`);
     const data = await response.json();
-    setAnimeList(data.results);
+    setAnimeList(data.data || []);
   }
 
   const handleSearch = (e) => {
@@ -36,7 +37,7 @@ function App() {
   // console.log(topAnime);
   return (
     <>
-      <div class="background">
+      <div className="background">
         <span></span>
         <span></span>
         <span></span>

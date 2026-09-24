@@ -3,9 +3,10 @@ import React from 'react'
 function AnimeCard({anime}) {
     return (
         <article className='anime-card'>
-            <a href={anime.url} target='_blank' rel="noopener noreferrer" key={Math.random()} >
+            <a href={anime.url} target='_blank' rel="noopener noreferrer">
                 <figure>
-                    <img src={anime.image_url} alt="img-anime" />
+                    {/* Jikan v4 nests the poster under images.jpg */}
+                    <img src={anime.images?.jpg?.image_url} alt={anime.title} />
                 </figure>
                 <h3>
                     {anime.title}

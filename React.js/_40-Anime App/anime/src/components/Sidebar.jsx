@@ -12,7 +12,7 @@ function Sidebar({ topAnime }) {
                         rel="noopener noreferrer"
                         target="_blank"
                     >
-                        {anime.rank} - {anime.title}
+                        {anime.popularity} - {anime.title}
                     </a>
                 ))}
             </nav>
