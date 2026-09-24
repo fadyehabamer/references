@@ -30,4 +30,4 @@ console.log(document.inputEncoding); // UTF-8
 
 //لوحطيت اي ترميز ثاني مثلا
 //<meta charset="ISO-8">
-//windows-12520 رح تطلع النتيجة 
+//windows-1252 رح تطلع النتيجة 

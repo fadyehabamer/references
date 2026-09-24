@@ -49,6 +49,9 @@ show3.innerHTML = document.images[0].src;
 
 var i;
 
+// NOTE: document.write() is strongly discouraged (and wipes the whole page if called
+// after it has loaded); prefer appending elements or setting textContent.
+// https://developer.mozilla.org/en-US/docs/Web/API/Document/write
 for (i = 0; i < document.images.length; i++) {
 	
 	document.write(document.images[i].src + '<br>');

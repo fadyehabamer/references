@@ -35,7 +35,7 @@ console.log(myimg.alt);
 // attribute جيبلي ال
 myimg.getAttribute('alt');
 //برضو اعطاني القيمة فاضية
-console.log(myimg.getAttribute('img'));
+console.log(myimg.getAttribute('alt')); // null: the attribute is not set ('img' is not an attribute name)
 
 // تبعت الصفحة الي انا فيها html هون جابلي صفحة ال
 console.log(myimg.src);
