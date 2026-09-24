@@ -43,7 +43,7 @@ console.log(myimg.src);
 //هون اغطاني قيمة فاضية
 console.log(myimg.getAttribute('src'));
 
-console.log(myimg.setAttribute('src', 'http://placehold.it/100/green'));
+console.log(myimg.setAttribute('src', 'https://placehold.co/100/green/white'));
 
 
 console.log(myimg.setAttribute('alt', 'sorry'));
