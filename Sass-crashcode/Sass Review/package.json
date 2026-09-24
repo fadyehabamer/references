@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass sass/style.scss dist/css/main.css"
+    "sass": "sass --no-source-map sass/style.scss dist/css/main.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "sass": "^1.105.0"
   }
 }
