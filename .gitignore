@@ -17,6 +17,7 @@ build/
 out/
 
 # Logs
+debug.log
 *.log
 npm-debug.log*
 
