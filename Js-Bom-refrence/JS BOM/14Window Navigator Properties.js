@@ -8,6 +8,11 @@
 
 //معلومات عن المتصفح
 
+// NOTE: appCodeName, appName, appVersion, platform and product are deprecated
+// (kept only for compatibility; appCodeName is always "Mozilla", appName always
+// "Netscape", product always "Gecko"). Use feature detection instead of sniffing.
+// https://developer.mozilla.org/en-US/docs/Web/API/Navigator
+
 console.log(navigator.appCodeName);
 console.log(navigator.appName);
 console.log(navigator.appVersion);

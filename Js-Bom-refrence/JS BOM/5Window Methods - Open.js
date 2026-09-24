@@ -14,6 +14,11 @@ window open: الصفحات المزعجة الي بتفتح الي عند تح�
 بكلتا الحالتين رح تشتغل
 window(url, Name or Attribute, specification, History Replace)
 
+NOTE: the 4th "replace" argument is no longer part of window.open() and is ignored;
+the current signature is window.open(url, target, windowFeatures).
+Most features such as menubar/status are ignored by modern browsers.
+https://developer.mozilla.org/en-US/docs/Web/API/Window/open
+
 url: اللينك الي بدي افتحها
 specification: مواصفات الصفحة 
 */
@@ -47,8 +52,8 @@ btn.onclick = function () {
    */
     
     
-//   window.open("http://www.placehold.it", "imgcolor");
-    window.open("http://www.placehold.it", "_blank", "width=300, height=400, left=100, top=100, menubar=no, status=yes", "true");
+//   window.open("https://placehold.co", "imgcolor");
+    window.open("https://placehold.co", "_blank", "width=300, height=400, left=100, top=100, menubar=no, status=yes", "true");
 };
 
 
