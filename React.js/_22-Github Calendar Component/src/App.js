@@ -14,6 +14,8 @@ export default class App extends Component {
     e.preventDefault()
 
     this.setState({
+      // NOTE: string refs (ref="name" + this.refs) are legacy: deprecated since React 16.3
+      // and removed in React 19. Prefer React.createRef() / useRef().
       name: this.refs.name.value,
     })
   }

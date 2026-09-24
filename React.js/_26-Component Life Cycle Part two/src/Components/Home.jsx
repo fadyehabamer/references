@@ -2,7 +2,8 @@
 * stages of component
     1- Mounting - Add to Dom     [constructor-getDerivedStatefromProps-Render-ComponedDidMount]
     2- Updating - ReRendering    [getDerivedStatefromProps - shouldComponentUpdate - render - getsnapShotBeforeUpdate  - ComponentDidupdate ]
-    3- UnMounting - Removed from Dom [componentWillMount]
+    3- UnMounting - Removed from Dom [componentWillUnmount]
+    (componentWillMount is a legacy MOUNTING method, now UNSAFE_componentWillMount)
 */
 
 import React, { Component } from 'react'
