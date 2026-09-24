@@ -11,7 +11,7 @@ function User(name) {
       [2] Assign The New Object To this Context
       [3] New Object Created Prototype = Function Prototype
       this = {};
-      this.__proto__ = User.__proto__
+      this.__proto__ = User.prototype  // (NOT User.__proto__, which is Function.prototype)
     */
     this.name = name;
     /*

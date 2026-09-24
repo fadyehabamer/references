@@ -1,4 +1,4 @@
-// Constructor function must be defined with Capitalized letter
+// Constructor function should be defined with a Capitalized letter (a naming convention, not enforced by JS)
 // Must need to use this keyword for creating Cbject Properties
 // 
 
