@@ -1,12 +1,12 @@
 # Angular-Sandbox
 
-> Documented way to Learn Angular 17 !
+> Documented way to Learn Angular 19 !
 
 ### 🔗 [View Live Demo](https://fadyehabamer.github.io/references/Angular-Sandbox/)
 
 ## Overview
 
-Documented way to Learn Angular 17 ! It demonstrates Flexbox, CSS custom properties.
+Documented way to Learn Angular 19 ! It demonstrates Flexbox, CSS custom properties.
 
 ## 🛠 Built With
 
