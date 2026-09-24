@@ -31,6 +31,11 @@
         const SameElement = React.createElement('p',{className : "myElement"} , "Hello React from other way")
         
         ReactDOM.render(element,document.getElementById("app"))
+
+        // * NOTE: ReactDOM.render only works here because this page loads React 17.
+        // * It is deprecated in React 18 and removed in React 19; the current API is:
+        // *   ReactDOM.createRoot(document.getElementById("app")).render(element)
+        // * https://react.dev/reference/react-dom/client/createRoot
     </script>
 
 </body>
