@@ -60,7 +60,7 @@
 //         alert("hi from sayhi function")
 // }
 // var testing_func = sayhi();
-// document.getElementById("x").innerHTML(testing_func)
+// document.getElementById("x").innerHTML = testing_func   // innerHTML is a property, not a function
 
 //function #2 passing parameters
 // function sayhi(name,middle,last){
@@ -178,8 +178,8 @@
 
 // var mydate =new Date();
 // console.log(mydate);
-// console.log(mydate.toString); // convert to string
-// console.log(mydate.tolocalestring); // convert to your local settings for string
+// console.log(mydate.toString()); // convert to string
+// console.log(mydate.toLocaleString()); // convert to your local settings for string
 
 // var friends = ["a","b","c"]
 //friends=friends.join();   // convert to string with "," as default separator
