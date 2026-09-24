@@ -6,7 +6,7 @@
 
 | Demo | Description | Preview |
 |------|-------------|---------|
-| [`Angular-Sandbox`](./Angular-Sandbox/) | Documented way to Learn Angular 17 ! | [🔗 Live](https://fadyehabamer.github.io/references/Angular-Sandbox/) |
+| [`Angular-Sandbox`](./Angular-Sandbox/) | Documented way to Learn Angular 19 ! | [🔗 Live](https://fadyehabamer.github.io/references/Angular-Sandbox/) |
 | [`Bootstrap4-CrashCode`](./Bootstrap4-CrashCode/) | Bootstrap4 Tutorial | [🔗 Live](https://fadyehabamer.github.io/references/Bootstrap4-CrashCode/) |
 | [`Bootstrap5-CrashCode`](./Bootstrap5-CrashCode/) | Bootstrap 5 documented Code | [🔗 Live](https://fadyehabamer.github.io/references/Bootstrap5-CrashCode/) |
 | [`CSS3-CrashCourse`](./CSS3-CrashCourse/) | Css3-Refrence | [🔗 Live](https://fadyehabamer.github.io/references/CSS3-CrashCourse/) |
