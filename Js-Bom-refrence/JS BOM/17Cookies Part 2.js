@@ -16,8 +16,11 @@ var msg = document.querySelector(".msg"),
 // string جابلي التاريخ
 var d = new Date();
 
+// an expires date in the past deletes the cookie straight away, so use one a month from now
+d.setMonth(d.getMonth() + 1);
+
 //path=/ يعني كل الدومين كل الصفحات يعني
-document.cookie = "color=green; expires=Sat Feb 01 2020 23:00:47; path=/";
+document.cookie = "color=green; expires=" + d.toUTCString() + "; path=/";
 
 //يعني modify عشان اعدل على الكوكيز اعمل 
 
@@ -25,7 +28,7 @@ document.cookie = "color=green; expires=Sat Feb 01 2020 23:00:47; path=/";
 document.cookie = "color=red";
 
 //هيك عدلت التاريخ لازم اكتب اللون الأول
-document.cookie = "color=red; expirs=Sat Feb 05 2020 23:00:47";
+document.cookie = "color=red; expires=" + d.toUTCString();
 
 // رح يضيفها كا كوكيز جديدة لاني حطيت كوكيز مختلفة حتى لو path اذا عدلت على ال 
 // بنفس الإسم الأولى بتتعامل مع الصفحة هاي والثانية الي غريت المسار تبعها بتتعامل مع
@@ -37,7 +40,8 @@ document.cookie = "color=red; expirs=Sat Feb 05 2020 23:00:47";
 //بس لو للكوكيز مسار مطلوب مني احط مسار عشان تنحذف
 //ماحطيت قيمة لأنو مافي داعي احط لمابدي احذف بنادي بس على color=
 //value بدون ال name ال
-document.cookie = "color=; expirs=Sat Feb 01 2020 23:00:47; path=/";
+// (the attribute must be spelled "expires"; a misspelled attribute is ignored and nothing is deleted)
+document.cookie = "color=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
 
 
 
@@ -53,7 +57,7 @@ btn.onclick = function () {
 msg.onclick = function () {
     "use strict";
 
-    document.cookie = "color=green; expires=Tue Feb 10 2020 21:45:20 GMT+0200; path=/";
+    document.cookie = "color=green; expires=" + d.toUTCString() + "; path=/";
 
     sec.innerHTML = document.cookie;
 

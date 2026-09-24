@@ -8,6 +8,8 @@
 
 Documented Code For BEST Javascript Library🔵. It demonstrates CSS Grid, Flexbox, CSS keyframe animations, CSS transitions, Responsive design (media queries).
 
+> **Note (2025):** Create React App, used by lessons `_06`–`_41`, was deprecated for new projects in February 2025 ([react.dev announcement](https://react.dev/blog/2025/02/14/sunsetting-create-react-app)). Lessons `_42`+ use Vite, which is one of the recommended replacements. The HTML lessons `_01`–`_05` load React 17, so their `ReactDOM.render` calls use an API that React 19 removed ([upgrade guide](https://react.dev/blog/2024/04/25/react-19-upgrade-guide#removed-reactdom-render)).
+
 ## 🛠 Built With
 
 **Languages:** HTML · CSS · Sass · JavaScript

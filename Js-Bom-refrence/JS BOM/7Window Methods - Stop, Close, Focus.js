@@ -16,7 +16,7 @@ focus : focus بترجع وبنعمل الها minimize اذا الصفحة مع
 */
 
 // html حطيت هاي الصورة في ال
-//<img src="http://www.placehold.it/4000/333">
+//<img src="https://placehold.co/4000/333/white.png">
 
 var s = document.querySelector('.btn'),
     btn2 = document.querySelector('.btn2'),
@@ -34,7 +34,7 @@ var x;
 
 msg.onclick = function () {
     "use strict";
-    x = window.open("http://www.placehold.it", "placehold", "width=300, height=400");
+    x = window.open("https://placehold.co", "placehold", "width=300, height=400");
 };
 
 btn2.onclick = function () {

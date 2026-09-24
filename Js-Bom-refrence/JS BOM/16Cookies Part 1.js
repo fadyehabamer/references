@@ -22,7 +22,7 @@ document.cookie;
 
 //بدنا نعمل كوكيز
 /*
-document.cookie("name=value; expires=Date; path=");
+document.cookie = "name=value; expires=Date; path=";
 
 name=value   peer to peer
 color=blue
@@ -36,5 +36,7 @@ path: path بدك اياه يمشي على الدومين للموقع كلو و
 رح تتطبق بالصفحة هاي بس لو رحت على صفحة ثانية مارح تعرفني بس هاي الصفحة عارفيتني
 رح يعملي الكوكيز بكل الموقع تبعي path اما لو كتبت ال
 */
-document.cookie("color=blue");
+// document.cookie is a property (a string), not a function: assign to it
+// (document.cookie("color=blue") throws TypeError: document.cookie is not a function)
+document.cookie = "color=blue";
 document.cookie;

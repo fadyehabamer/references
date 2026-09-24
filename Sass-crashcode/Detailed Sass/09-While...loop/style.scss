@@ -1,8 +1,9 @@
+@use "sass:math"; // math.div() replaces the deprecated / division
 $x:12;
 
 @while $x >0 {
     .col-#{$x}{
-        width: (100% / (12/ $x ));
+        width: math.div(100%, math.div(12, $x));
         height: 20px;
         background-color: red;
     }

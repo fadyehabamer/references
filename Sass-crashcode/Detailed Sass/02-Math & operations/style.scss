@@ -1,8 +1,11 @@
 // math & operations (+ ,- , * , /)
+// NOTE: using / for division is deprecated in Dart Sass (removed in 2.0) because / is
+// also a CSS separator; divide with math.div() from the built-in sass:math module.
+@use "sass:math";
 $main-size:18px;
 $full-width:100%;
 
 .class1{
     font-size: $main-size + 20;
-    width: $full-width / 5 ;
+    width: math.div($full-width, 5) ;
 }

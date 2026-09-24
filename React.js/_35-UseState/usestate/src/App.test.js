@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+// the CRA starter test looked for a "learn react" link this demo never renders
+test('renders the functional component heading', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/THIS IS\s+FUNCTIONAL COMPONENT/)).toBeInTheDocument();
 });

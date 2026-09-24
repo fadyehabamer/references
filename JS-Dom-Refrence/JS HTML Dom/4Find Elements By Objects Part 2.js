@@ -16,7 +16,7 @@
  4.document.body
  
  //نفس الاإشي بس بيناتهم اختلافات
- 5.document.anchors
+ 5.document.anchors  (deprecated/obsolete in the HTML standard - use document.querySelectorAll('a[name]'))
  6.document.links
  
  

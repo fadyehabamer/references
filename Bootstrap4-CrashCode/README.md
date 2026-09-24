@@ -8,6 +8,8 @@
 
 Bootstrap4 Tutorial. It demonstrates Responsive design (media queries), CSS transforms & 3D.
 
+> **Note:** Bootstrap 4 reached end-of-life on 2023-01-01 and gets no more fixes ([release policy](https://github.com/twbs/release)). For current syntax see [`Bootstrap5-CrashCode`](../Bootstrap5-CrashCode/).
+
 ## 🛠 Built With
 
 **Languages:** HTML

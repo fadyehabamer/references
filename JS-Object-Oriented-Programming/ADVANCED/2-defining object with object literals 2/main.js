@@ -24,7 +24,7 @@ let user = {
   // },
   getFullName: () => `Full Name: ${user.firstName} ${user.lastName}`,
 
-  getAgeInDays: () => "Your Age In Days Is  " + user.age*356,
+  getAgeInDays: () => "Your Age In Days Is  " + user.age*365,
 };
 
 // Accessing Object Properties

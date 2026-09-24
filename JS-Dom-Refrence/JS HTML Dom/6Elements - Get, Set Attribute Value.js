@@ -38,7 +38,7 @@ var img = document.querySelector('img');
 console.log(img.src);
 
 //بنلاقي السورس صار مليان  element لما نطلع على ال
-img.src = 'http://placehold.it/200/red';
+img.src = 'https://placehold.co/200/red/white';
 
 //هون جاب السورس الجديد
 console.log(img.src);

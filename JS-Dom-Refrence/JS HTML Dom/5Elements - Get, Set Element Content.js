@@ -13,6 +13,11 @@
 يعني لاتحاول تشتغل فيهم ابداا
 innerText  // Not Standerd
 outerText  // Not Standerd
+(Correction: both are now standard - defined in the HTML Living Standard and
+supported by all modern browsers. They differ from textContent: innerText is
+layout-aware (ignores hidden text, triggers reflow). textContent is still the
+faster choice for plain text.
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
 
 طيب بشو اشتغل؟
 

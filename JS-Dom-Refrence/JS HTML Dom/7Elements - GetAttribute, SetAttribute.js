@@ -35,7 +35,7 @@ console.log(myimg.alt);
 // attribute جيبلي ال
 myimg.getAttribute('alt');
 //برضو اعطاني القيمة فاضية
-console.log(myimg.getAttribute('img'));
+console.log(myimg.getAttribute('alt')); // null: the attribute is not set ('img' is not an attribute name)
 
 // تبعت الصفحة الي انا فيها html هون جابلي صفحة ال
 console.log(myimg.src);
@@ -43,7 +43,7 @@ console.log(myimg.src);
 //هون اغطاني قيمة فاضية
 console.log(myimg.getAttribute('src'));
 
-console.log(myimg.setAttribute('src', 'http://placehold.it/100/green'));
+console.log(myimg.setAttribute('src', 'https://placehold.co/100/green/white'));
 
 
 console.log(myimg.setAttribute('alt', 'sorry'));
