@@ -25,3 +25,14 @@ npm-debug.log*
 .env
 .env.local
 .env.*.local
+
+# Lockfiles in tutorial snapshot folders (not deployed; npm install resolves current versions)
+/React.js/**/package-lock.json
+/React.js/**/yarn.lock
+/React.js/**/pnpm-lock.yaml
+/Angular-Sandbox/**/package-lock.json
+/Angular-Sandbox/**/yarn.lock
+/Angular-Sandbox/**/pnpm-lock.yaml
+/Sass-crashcode/**/package-lock.json
+/Sass-crashcode/**/yarn.lock
+/Sass-crashcode/**/pnpm-lock.yaml
